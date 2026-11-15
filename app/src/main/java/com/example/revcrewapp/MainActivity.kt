@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.revcrewapp.ui.screens.main.MainScreen
 import com.example.revcrewapp.ui.theme.RevCrewAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,6 +20,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             RevCrewAppTheme {
+                MainScreen(
+                    onLoginClick = { /* Login */ },
+                    onRegisterClick = { /* Registro */ }
+                )
             }
         }
     }
